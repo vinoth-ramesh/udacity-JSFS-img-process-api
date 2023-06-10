@@ -98,4 +98,4 @@ To run tests, run the following command
 
 ## Author
 
-Vinoth Ramesh ([@vinoth-ramesh](https://gitlab.com/vinoth-ramesh))
+Vinoth Ramesh ([@vinoth-ramesh](https://github.com/vinoth-ramesh))

@@ -13,5 +13,10 @@
         "noPropertyAccessFromIndexSignature": true,
         "noImplicitOverride": true
     },
-    "exclude": ["node_modules", "./dist", "spec", "assets"]
+    "exclude": [
+        "node_modules",
+        "./dist",
+        "spec",
+        "images"
+    ]
 }

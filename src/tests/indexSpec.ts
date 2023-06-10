@@ -1,8 +1,11 @@
-import request from 'supertest';
-import app from '../index';
+import supertest from "supertest";
+import app from "../index";
 
-describe('GET /', (): void => {
-    it('responds with 200', (done): void => {
-        request(app).get('/').expect(200, done);
+const request = supertest(app);
+
+describe("GET /", () => {
+    it("Success response with 200", async () => {
+        const response = await request.get("/");
+        expect(response.status).toBe(200);
     });
 });

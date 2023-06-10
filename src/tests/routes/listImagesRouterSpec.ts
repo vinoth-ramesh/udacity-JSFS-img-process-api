@@ -1,8 +1,12 @@
-import request from 'supertest';
+import supertest from "supertest";
 import app from '../../index';
 
+const request = supertest(app);
+
 describe('GET /api/listImages', (): void => {
-    it('responds with 200', (done): void => {
-        request(app).get('/api/listImages').expect(200, done);
+
+    it("Success response with 200", async () => {
+        const response = await request.get("/api/listImages");
+        expect(response.status).toBe(200);
     });
 });
